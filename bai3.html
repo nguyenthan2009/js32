@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  h= +prompt('nhập vào chiều cao của tam giác: ')
+  let i;
+  let j;
+  let tamgiac= ''
+  for( i=0;i<h;i++) {
+    tamgiac+= '<br>'
+    for (j = 0; j < h; j++) {
+
+      if (j < i) {
+        tamgiac +=    ''
+      } else {
+        tamgiac +=  '*'
+      }
+    }
+    tamgiac+= '</br>'
+  }
+  document.write(tamgiac)
+
+
+
+  M= +prompt('nhập vào chiều cao của tam giác: ')
+  let k;
+  let f;
+  let tamgiacc= ''
+  for( k=0;k<M;k++){
+      tamgiac+= '<br>'
+      for (f = 0; f < M; j++) {
+          if (f < k) {
+              tamgiac +=    '*'
+          } else {
+              tamgiac +=  ''
+          }
+      }
+      tamgiacc+= '</br>'
+  }
+  document.write(tamgiac)
+
+</script>
+</body>
+</html>
